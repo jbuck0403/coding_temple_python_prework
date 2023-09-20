@@ -29,9 +29,7 @@ def max_num_in_list(a_list):
 # by 100, unless it is also divisible by 400.
 def is_leap_year(a_year):
     if a_year % 100 == 0:
-        if a_year % 400 == 0:
-            return True
-        if a_year % 4 == 0:
+        if a_year % 400 == 0 or a_year % 4 == 0:
             return True
         return False
     elif a_year % 4 == 0:
